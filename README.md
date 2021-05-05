@@ -1,5 +1,5 @@
 # Towards Accurate Scene Text Recognition with Semantic Reasoning Networks
-## This is an unofficial implementation of SRN model for Pytorch.The model has reached the results in the paper on some datasets, and some datasets have not yet reached. Instead of training PVAM and other modules in stages as described in the paper, we train the model end-to-end. The whole project refers to Paddle-OCR.
+This is an unofficial implementation of SRN model for Pytorch.The model has reached the results in the paper on some datasets, and some datasets have not yet reached. Instead of training PVAM and other modules in stages as described in the paper, we train the model end-to-end. The whole project refers to Paddle-OCR.
 
 
 ## Results
