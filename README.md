@@ -5,7 +5,7 @@ This is an unofficial implementation of SRN model for Pytorch.The model has reac
 ## Results
 |IIIT5K|ic13_1015|ic03_867|ic15_1811|svt_647|svtp_645|cute80_288|
 |----|----|----|----|----|----|----|
-|94.6|92.4|94.0|0.80|91.7|83.4|84.0|
+|94.6|92.4|94.0|80.0|91.7|83.4|84.0|
 
 ## Requirements
 Pytorch >=1.2.0
