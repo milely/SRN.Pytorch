@@ -18,7 +18,7 @@ bash train.sh
 ```
 --train_data_dir is the train dataset, download the train dataset from [ASTER](https://github.com/ayumiymk/aster.pytorch)
 
-## eval
+## Eval
 ```shell
 bash test.sh
 ```
