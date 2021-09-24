@@ -64,8 +64,8 @@ class Trainer(object):
                                                           pvam_loss.val, pvam_loss.avg,
                                                           vsfd_loss.val, vsfd_loss.avg))
                 gt_str, pred_str = evaluator.decode(gt, pred)
-                print('gt:\t', gt_str[0])
-                print('pred:\t', pred_str[0])
+                print('gt:\t', gt_str)
+                print('pred:\t', pred_str)
             if self.iters % 5000 == 0:
                 eval_res = evaluator.eval(self.test_dataloader)
                 print('Epoch:[{}][{}/{}]\t'

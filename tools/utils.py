@@ -79,7 +79,7 @@ class LmdbDataset(data.Dataset):
     buf.write(imgbuf)
     buf.seek(0)
     try:
-      img = Image.open(buf).convert('RGB')
+      image = Image.open(buf).convert('RGB')
     except IOError:
       print('Corrupted image for %d' % index)
       return self[index + 1]
@@ -110,15 +110,15 @@ class LmdbDataset(data.Dataset):
     label_len = len(label_list)
 
     if self.transform is not None:
-      img = self.transform(img)
+      image = self.transform(image)
     if self.is_train:    #data augmentation
       try:
-        img = np.array(img)
+        img = np.array(image)
         img = warp(img,10)
-        img = Image.fromarray(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
+        image = Image.fromarray(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
       except Exception as e:
-        img = img
-    return img, label, label_len
+        image = image
+    return image, label, label_len
 
 
 class ResizeNormalize(object):
